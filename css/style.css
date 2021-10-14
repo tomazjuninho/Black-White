@@ -1,0 +1,471 @@
+:root {
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/**************
+*    Home
+**************/
+
+
+.home {
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagem/logo1.png);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+    
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20PX;
+}
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.home .header .nav ul li .logo {
+    width: 110px;
+    margin: 0 30px  ;
+}
+
+/*********************
+*    Home  - Banner
+**********************/
+
+.home .banner {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    width: 770px;
+    margin-left: -385px;
+    margin-top: -125px;
+}
+.home .banner span {
+    display: block;
+}
+.home .banner .slogan {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+.home .banner  h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 120px;
+    
+}
+
+.home .banner  h1 .black {
+    color: black;
+    text-shadow: 3px 3px 2px white;
+}
+
+.home .banner  h1 .white {
+    text-shadow: 3px 3px 2px black;
+}
+
+.home .banner  h1 div {
+    color: var(--color-p);
+}
+div img {
+    margin-top: 20px;
+}
+
+/*********************
+*    Abaut
+**********************/
+
+.about {
+    background-color: var(--color-primary);
+    height: 100vh;
+}
+.about .conteiner {
+    display: flex;
+}
+.about .time {
+    position: relative;
+    top: -50px;
+    width: 33%;
+    padding: 20px;
+    background-image: url(../imagem/brush-big.jpg);
+}
+.about .time .overlay {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.cut {
+    width: 50px;
+}
+.about .time h3 {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+    
+}
+.about .time .text::after {
+    content: '•';
+    display: block;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about .time .text:last-of-type:after {
+    content: '|';
+}
+.about .time .text {
+    margin: 10px 0;
+}
+.about .time .text h4 {
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+.about .time span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+/*********************
+*    Experiencia
+**********************/
+
+
+
+.about .experiencia {
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 90px;
+}
+
+.about .experiencia h2 {
+    font-weight: 400px;
+    font-size: 40px;
+}
+.about .experiencia h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+.about .experiencia .text {
+    display: flex;
+    justify-content: space-between;
+}
+.about .experiencia .text p {
+    margin-bottom: 20px;
+}
+
+/*********************
+*    Serviços
+**********************/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+.services h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+}
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+}
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 30px;
+    margin: 30px;
+}
+.services .box h4 {
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+.services .box p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/*********************
+*    Agendamento
+**********************/
+
+.agendamento {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(../imagem/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+.agendamento h2 {
+    text-align: center;
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.agendamento img {
+    margin: 0 auto;
+    display: block;
+}
+.agendamento form {
+    margin-top: 80px;
+}
+.agendamento .dados {
+    display: flex;
+    justify-content: space-between;
+}
+.agendamento .input {
+    margin-bottom: 30px;
+    width: 100%;
+    margin-right: 50px;
+}
+.agendamento .input:last-of-type {
+    margin-right: 0;
+}
+.agendamento label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+
+}
+.agendamento .dados input,
+.agendamento .dados select,
+.agendamento textarea {
+    border-radius: 2px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.agendamento button {
+    padding: 10px 50px;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*********************
+*    Galeria de fotos
+**********************/
+
+.galeria {
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+.galeria h2 {
+    text-align: center;
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.galeria img {
+    margin: 0 auto;
+    display: block;
+}
+
+.galeria .quadroGaleria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1010px;
+    height: 1100px;
+    margin: 50px auto;
+}
+.galeria .quadroGaleria div {
+    border: 10px solid var(--color-primary);
+    margin: 5px;
+    width: 31%;
+}
+.galeria .quadroGaleria div img {
+    width: 100%;
+}
+
+/*********************
+*    Localização
+**********************/
+
+
+.localizacao {
+    padding: 100px 0;
+    background-image: url(../imagem/bg-location.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.localizacao .head {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-primary-light);
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+.localizacao .head .info {
+    display: flex;
+    align-items: center;
+   
+}
+.localizacao .head .info .icone {
+    padding: 10px;
+    margin-right: 10px;
+}
+.localizacao .head .info .texto span {
+    display: block;
+}
+.localizacao .head .info .texto span:first-child {
+    color: gray;
+}
+.localizacao .head .info .texto span:last-child {
+    color: white;
+}
+.localizacao .mapas {
+    width: 100%;
+}
+.localizacao .mapas iframe {
+    width: 100%;
+}
+
+
+/*********************
+*    Rodapé
+**********************/
+
+.footer {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    background-color: #191919;
+    color: white;
+}
+.footer .codenome {
+    align-self: center;
+}
+
+.footer .redes {
+    display: flex;
+    align-items: center;
+}
+.footer .redes img {
+    width: 40px;
+    margin: 20px;
+    
+    cursor: pointer;
+}
+
+.footer .redes img:last-child {
+    border-radius: 50%;
+}
+.footer .float {
+    position: fixed;
+    width: 0px;
+    height: 50px;
+    bottom: 5px;
+    right: 55px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer; 
+}
+.footer .facebook {
+    position: fixed;
+    width: 5px;
+    height: 100px;
+    bottom: 10px;
+    right: 50px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer; 
+}
+
+.footer .instagram {
+    position: fixed;
+    width: 5px;
+    height: 150px;
+    bottom: 15px;
+    right: 50px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer; 
+}
+
+
+/*********************
+*    Responsivo
+**********************/
+
+@media (max-width: 1100px) {
+    .have {
+        display: none;
+    }
+}
